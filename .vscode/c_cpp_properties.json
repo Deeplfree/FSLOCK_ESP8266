@@ -1,0 +1,45 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/",
+                "/home/ubuntu/esp/ESP8266_RTOS_SDK/**",
+                "/home/ubuntu/esp/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/include/*",
+                "/home/ubuntu/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/include/mbedtls/",
+                "/home/ubuntu/esp/ESP8266_RTOS_SDK/components/esp_common/include/",
+                "${workspaceFolder}/main/usr/inc/**",
+                "${workspaceFolder}/build/include/**",
+                "/home/ubuntu/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/",
+                "${workspaceFolder}/main/usr/inc/",
+                "${workspaceFolder}/build/include/",
+                "${workspaceFolder}/",
+                "${workspaceFolder}/",
+                "${workspaceFolder}/",
+                "/home/ubuntu/esp/ESP8266_RTOS_SDK/components/esp_https_ota/include"
+            ],
+            "defines": [
+                "__ESP_FILE__"
+            ],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "c99",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "clang-x64",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": false,
+                "path": [
+                    "${workspaceFolder}/",
+                    "/home/ubuntu/esp/ESP8266_RTOS_SDK/**",
+                    "/home/ubuntu/esp/ESP8266_RTOS_SDK/components/mqtt/esp-mqtt/include/*",
+                    "/home/ubuntu/esp/ESP8266_RTOS_SDK/components/mbedtls/mbedtls/include/mbedtls/",
+                    "/home/ubuntu/esp/ESP8266_RTOS_SDK/components/esp_common/include/",
+                    "${workspaceFolder}/main/usr/inc/**",
+                    "${workspaceFolder}/build/include/**",
+                    "/home/ubuntu/esp/ESP8266_RTOS_SDK/components/freertos/port/esp8266/include/"
+                ]
+            },
+            "forcedInclude": []
+        }
+    ],
+    "version": 4
+}
