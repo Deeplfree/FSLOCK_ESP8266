@@ -18,6 +18,8 @@ static esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event)
     // your_context_t *context = event->context;
     switch (event->event_id)
     {
+    case MQTT_EVENT_BEFORE_CONNECT:
+        break;
     case MQTT_EVENT_CONNECTED:
         ESP_LOGI(TAG, "MQTT_EVENT_CONNECTED");
         msg_id = esp_mqtt_client_publish(client, "FSLOCK", "FSLOCK CONNECTED OK", 0, 2, 0);
@@ -70,12 +72,12 @@ static esp_err_t mqtt_event_handler(esp_mqtt_event_handle_t event)
             printf("event->data == QWERCLOSE\r\n");
             mqttStatus = 2;
         }
-        else if((strncmp(event->data, "QWEROTA", event->data_len) == 0))
+        else if ((strncmp(event->data, "QWEROTA", event->data_len) == 0))
         {
             StartOTA();
             // StopMQTT();
         }
-        
+
         else
         {
             mqttStatus = 0;
